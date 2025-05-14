@@ -1,5 +1,4 @@
 package com.wakaleo.gameoflife.domain;
-
  /**
  * Wakaleo Consulting - John Ferguson Smart
  * Game of life, demonstration application for Jenkins: The Definitive Guide
@@ -16,14 +15,12 @@ public enum Cell {
     private Cell(final String initialSymbol) {
         this.symbol = initialSymbol;
     }
-
 	// Override function for easy printing of cell's symbol
 	// Functions identically to default getter ( getSymbol() )
     @Override
     public String toString() {
         return symbol;
     }
-
 	// Function used for creating a cell given a string
     static Cell fromSymbol(final String symbol) {
         Cell cellRepresentedBySymbol = null;
@@ -35,7 +32,6 @@ public enum Cell {
         }
         return cellRepresentedBySymbol;
     }
-
 	// Default getter
     public String getSymbol() {
         return symbol;
