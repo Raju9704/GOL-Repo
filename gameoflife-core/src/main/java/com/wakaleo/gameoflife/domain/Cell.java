@@ -11,7 +11,6 @@ public enum Cell {
     LIVE_CELL("*"), DEAD_CELL(".");
 
     private String symbol;
-
     private Cell(final String initialSymbol) {
         this.symbol = initialSymbol;
     }
@@ -21,7 +20,7 @@ public enum Cell {
     public String toString() {
         return symbol;
     }
-	// Function used for creating a cell given a string
+// Function used for creating a cell given a string
     static Cell fromSymbol(final String symbol) {
         Cell cellRepresentedBySymbol = null;
         for (Cell cell : Cell.values()) {
